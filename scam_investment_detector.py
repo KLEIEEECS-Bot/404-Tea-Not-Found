@@ -5,8 +5,8 @@ from transformers import pipeline
 
 classifier = pipeline(
     "zero-shot-classification",
-    model="valhalla/distilbart-mnli-12-1",  # ✅ lightweight, stable
-    device=-1  # ✅ force CPU
+    model="valhalla/distilbart-mnli-12-1",
+    device=-1  
 )
 
 RED_FLAGS = [
